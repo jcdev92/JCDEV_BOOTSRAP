@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Play:wght@400;700&display=swap');
+
+* {
+    font-family: 'Play', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.paragraphs {
+    text-align: justify;
+}
+
+.header{
+    z-index: 99;
+}
+
+.navbar {
+    background-color: darkblue;
+}
+
+.card {
+    background-color: teal;
+    box-shadow: black 0px 0px 5px;
+    text-shadow: black 0px 0px 5px;
+}
+
+.about, .portfolio, .footer {
+    background-color: darkblue;
+    color: white;
+    box-shadow: black 0px 0px 5px;
+    text-shadow: black 0px 0px 5px;
+}
+
+.read {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    border-radius: 50%;
+    border: none;
+}
+
+.read i {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.read i:hover {
+    color: green;
+}
+
+
+
+
+
+.skills__container {
+    animation: carrusel 20s infinite linear;
+
+}
+
+.skills__item {
+    width: 100px;
+}
+.skills__item__img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes carrusel {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+.skills__item .skills__item__img {
+    cursor: pointer;
+}
+
+.skills__container:hover {
+    animation-play-state: paused;
+}
+
+
+@media (max-width: 768px) {
+    .skills__container {
+        overflow-x: scroll;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .skills__container {
+        overflow: hidden;
+    }
+
+    .readmorebtn {
+        display: none;
+    }
+
+
+}
+
