@@ -26,19 +26,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav align-items-center fs-2 p-3 w-100 justify-content-evenly">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <li class="nav-item" id="navbar-toggle">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="navbar-toggle">
                             <a class="nav-link" href="#about">About</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="navbar-toggle">
                             <a class="nav-link" href="#skills">Skills</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="navbar-toggle">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="navbar-toggle">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="about jumbotron row p-5 mt-5" id="about">
+                    <section class="about jumboz<tron row p-5 mt-5" id="about">
                         <h1 class="display-4 p-4 text-center">About Me</h1>
                         <p class="lead p-4 fs-3 text-center">"At this point, I decided to offer my skills from what I have learned
                             to
@@ -231,7 +231,7 @@
                         <div class="container-fluid">
                             <div class="row g-5">
                                 <div class="col-lg-6 col-md-12 col-sm-12 p-4">
-                                    <form action="https://formspree.io/f/xnqoqzjy" method="POST">
+                                    <form id="form" action="https://formspree.io/f/xnqoqzjy" method="POST">
                                         <div class="mb-3">
                                             <label for="name" class="form-label">Name</label>
                                             <input type="text" class="form-control" id="name" name="name" required />
@@ -275,6 +275,7 @@
                             </div>
                         </div>
                     </section>
+                </div>
             </div>
         </div>
     </main>
@@ -290,6 +291,8 @@
                 </div>
             </div>
         </div>
+    </footer>
+    <script src="js/scripts.js"></script>
     <script>
         const read = document.querySelector('#read');
         read.addEventListener('click', () => read.innerHTML === '<i class="bi bi-caret-down"></i>' ? read.innerHTML =
