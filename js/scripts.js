@@ -36,18 +36,25 @@ form.addEventListener('submit', (e) => {
 });
 
 
-/* navbar activation */
+/* nav-link active or not */
 
-const nav = document.querySelector('#navbar-toggle');
-const check = document.querySelector('.nav-link');
+const navLinks = document.querySelectorAll('.nav-link');
 
-const display = () => {
-	if (check.checked) {
-		nav.style.display = 'flex';
-	} else {
-		nav.style.display = 'none';
-	}
-}
+navLinks.forEach(link => {
+	link.addEventListener('click', () => {
+		navLinks.forEach(link => link.classList.remove('active'));
+		link.classList.add('active');
+	})
+})
+
+/* navbar brand active home */
+
+const navBrand = document.querySelector('.navbar-brand');
+
+navBrand.addEventListener('click', () => {
+	navLinks.forEach(link => link.classList.remove('active'));
+})
 
 
-check.addEventListener('click', display);
+
+

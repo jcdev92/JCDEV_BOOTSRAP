@@ -21,17 +21,18 @@ html {
     background-color: darkblue;
 }
 
+
 .card {
     background-color: teal;
-    box-shadow: black 0px 0px 5px;
-    text-shadow: black 0px 0px 5px;
+    box-shadow: black 0 0 5px;
+    text-shadow: black 0 0 5px;
 }
 
 .about, .portfolio, .footer {
     background-color: darkblue;
     color: white;
-    box-shadow: black 0px 0px 5px;
-    text-shadow: black 0px 0px 5px;
+    box-shadow: black 0 0 5px;
+    text-shadow: black 0 0 5px;
 }
 
 .read {
@@ -52,9 +53,6 @@ html {
 .read i:hover {
     color: green;
 }
-
-
-
 
 
 .skills__container {
